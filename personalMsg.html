@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PersonalMsg</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/weui.min.css" rel="stylesheet" />
+  <link href="css/jquery-weui.min.css" rel="stylesheet" />
+  <link href="css/Mdate.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/common.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/p-common.css" rel="stylesheet" type="text/css" media="all" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
+</head>
+<body style="background-color: rgb(241, 241, 241);">
+  <div class="mobel-header">
+    <a href="/mobile/Index/index.html" class="back"></a>
+    <div class="title">个人信息</div>
+  </div>
+  <div class="setPage">
+    <div class="contentBox">
+      <div class="imgbox _public">
+        <a href="javascript:;">头像</a>
+        <div class="filePic">
+          <input type="file" class="inputPic" allowexts="gif,jpeg,jpg,png,bmp" accept="image/*">
+          <img class="am-circle am-img-thumbnail" src="image/icon/1.png" alt="">
+        </div>
+      </div>
+      <div class="name _public">
+        <a href="javascript:;">姓名</a>
+        <span id="name">张先生</span>
+      </div>
+      <div class="brand _public">
+        <a href="javascript:;">性别</a>
+        <span class="gender">未填写</span>
+      </div>
+      <div class="birth _public">
+        <a href="javascript:;">生日</a>
+        <input id="dateSelectorOne" type="text" value="2000/01/01">
+      </div>
+      <div class="phone _public">
+        <a href="javascript:;">手机号码</a>
+        <span>18888888888</span>
+      </div>
+      <div class="email _public">
+        <a href="javascript:;">邮箱地址</a>
+        <span>123456@qq.com</span>
+      </div>
+    </div>
+  </div>
+  <!---->
+  <div class="mobel-footer">
+    <ul>
+      <li class="_home"><a href="index.html">首页</a></li>
+      <li class="_brand"><a href="brandList.html">品牌</a></li>
+      <li class="_mine active"><a href="index.html">我的</a></li>
+    </ul>
+  </div>
+<script src="js/jquery.min.js"></script>
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="js/jquery-weui.min.js"></script>
+<script src="js/iScroll.js"></script>
+<script src="js/Mdate.js"></script>
+<script src="js/bootstrap.js"> </script>
+<script src="js/simpleCart.min.js"> </script>
+<script src="js/mine.js"> </script>
+<script src="js/type.js"></script>
+</body>
+<script>
+new Mdate("dateSelectorOne");
+new Mdate("dateSelectorOne", {
+    acceptId: "dateSelectorTwo",
+    beginYear: "1988",
+    format: "/"
+})
+</script>
+</html>
